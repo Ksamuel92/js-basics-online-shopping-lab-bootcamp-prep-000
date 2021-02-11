@@ -85,12 +85,14 @@ function placeOrder(cardNumber) {
   // accepts ONE ARGUMENT 
   // If (NO ARGUEMENT) {Sorry, we don't have a credit card on file for you.
   //If (cardNumber) {Empty getCart(); return `Your total cost is ${total()}, which will be charged to the card ${cardNumber}.
-  if (cardNumber) {console.log(`Your total cost is ${total()}, which will be charged to the card ${cardNumber}.`)}
-  
-  
   if (cardNumber === undefined) {
    return 'Sorry, we don\'t have a credit card on file for you.'
   } else {
-   return `Your total cost is ${total()}, which will be charged to the card ${cardNumber}.`
+    let sumToCharge = total();
+    getCart().splice(0,getCart.length);
+   return `Your total cost is ${sumToCharge}, which will be charged to the card ${cardNumber}.`;
+}
+}
+
 }
 }
