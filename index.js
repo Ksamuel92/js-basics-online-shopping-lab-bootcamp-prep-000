@@ -89,7 +89,7 @@ function placeOrder(cardNumber) {
    return 'Sorry, we don\'t have a credit card on file for you.'
   } else {
     let sumToCharge = total();
-    getCart().splice(0,getCart.length);
-   return `Your total cost is ${sumToCharge}, which will be charged to the card ${cardNumber}.`;
+    getCart().splice(0,getCart().length);
+   return `Your total cost is $${sumToCharge}, which will be charged to the card ${cardNumber}.`;
 }
 }
