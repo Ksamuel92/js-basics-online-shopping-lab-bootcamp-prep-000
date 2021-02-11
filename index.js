@@ -93,6 +93,3 @@ function placeOrder(cardNumber) {
    return `Your total cost is ${sumToCharge}, which will be charged to the card ${cardNumber}.`;
 }
 }
-
-}
-}
